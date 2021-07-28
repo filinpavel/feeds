@@ -17,8 +17,6 @@ for i in range(d) :
       datesplit = (article.entries[n].published).split()
       date = datesplit[1]+' '+datesplit[2]
       articlelink =' '+article.entries[n].title+' '+article.entries[n].link
-      a = id +' '+ date
-      st.write(a)  
-      a = articlelink
+      a = id +' '+ date +' '+ articlelink
       st.write(a)
   
