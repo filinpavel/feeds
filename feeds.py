@@ -10,4 +10,4 @@ for n in range(r) :
   #articlelink =' '+nkcki.entries[n].title+' '+nkcki.entries[n].link
   #a = data + articlelink
   #st.write(a)
-  st.markdown(date + '[nkcki.entries[n].title](nkcki.entries[n].link)')
+  st.markdown(date + [nkcki.entries[n].title](nkcki.entries[n].link))
