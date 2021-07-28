@@ -1,8 +1,6 @@
 import streamlit as st
 import feedparser
-st.write('
-         ###Threat Leak
-         ')
+st.write(' ###Threat Leak ')
 dict = {'НКЦКИ':'https://safe-surf.ru/rss/',
         'Checkpoint':'https://research.checkpoint.com/feed/',
         'CISA':'https://us-cert.cisa.gov/ncas/current-activity.xml',
