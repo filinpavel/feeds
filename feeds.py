@@ -1,13 +1,21 @@
 import streamlit as st
 import feedparser
-nkcki = feedparser.parse('https://safe-surf.ru/rss/')
-st.markdown('### NKCKI feed')
+dict = {'НКЦКИ':'https://safe-surf.ru/rss/',
+        'Checkpoint':'https://research.checkpoint.com/feed/',
+        'CISA':'https://us-cert.cisa.gov/ncas/current-activity.xml',
+        'NSA':'https://www.nsa.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=920&max=20',
+        'Securelist':'https://securelist.com/feed',
+        'ESET':'https://www.welivesecurity.com/feed/'}
 r = 5
-for n in range(r) :
-  datesplit = (nkcki.entries[n].published).split()
-  date = datesplit[1]+' '+datesplit[2]
-  #articlelink =' '+ nkcki.entries[n].title +' '+ nkcki.entries[n].link
-  #articlelink =' '+nkcki.entries[n].title+' '+nkcki.entries[n].link
-  #a = data + articlelink
-  #st.write(a)
-  st.markdown(date + [nkcki.entries[n].title](nkcki.entries[n].link))
+d = len(dict)
+for i in range(d) :
+    for n in range(r):
+      id = list(dict)[i]
+      url = list(dict.values())[i]
+      article = feedparser.parse(url)
+      datesplit = (article.entries[n].published).split()
+      date = datesplit[1]+' '+datesplit[2]
+      articlelink =' '+article.entries[n].title+' '+article.entries[n].link
+      a = id+' '+ date + articlelink
+      st.write(a)
+  
