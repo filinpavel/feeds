@@ -6,7 +6,7 @@ dict = {'НКЦКИ':'https://safe-surf.ru/rss/',
         'NSA':'https://www.nsa.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=920&max=20',
         'Securelist':'https://securelist.com/feed',
         'ESET':'https://www.welivesecurity.com/feed/'}
-r = 5
+r = 3
 d = len(dict)
 for i in range(d) :
     for n in range(r):
