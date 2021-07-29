@@ -6,20 +6,21 @@ dict = {'НКЦКИ':'https://safe-surf.ru/rss/',
         'CISA':'https://us-cert.cisa.gov/ncas/current-activity.xml',
         'NSA':'https://www.nsa.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=920&max=20',
         'Securelist':'https://securelist.com/feed',
-        'ESET':'https://www.welivesecurity.com/feed/'}
+        'ESET':'https://www.welivesecurity.com/feed/',
+        'NCSC':'https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml',
+        'CISA':'https://us-cert.cisa.gov/ncas/analysis-reports.xml',
+       'MSFT SRC':'https://msrc-blog.microsoft.com/feed/',
+       'CERT FR':'https://www.cert.ssi.gouv.fr/feed/'}
 #r = st.slider('',1,5,1)
-r = 3
-d = len(dict)
-for i in range(d) :
-    for n in range(r):
-      id = list(dict)[i]
+depth = 3
+dictlen = len(dict)
+for i in range(dictlen) :
+    for n in range(depth):
       url = list(dict.values())[i]
       article = feedparser.parse(url)
       datesplit = (article.entries[n].published).split()
       date = datesplit[1] + ' ' + datesplit[2]
       articlelink = ' ' + article.entries[n].title + ' ' + article.entries[n].link
-      #a = id + ' ' + date + ' ' + articlelink
-      a = id+' '+ date + ' ' + article.entries[n].title
-      st.write(a)
-      a = '\t' + '\t' + article.entries[n].link
+      id = list(dict)[i]
+      a = id + ' ' + date + ' ' + articlelink
       st.write(a)
