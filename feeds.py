@@ -10,7 +10,9 @@ dict = {'НКЦКИ':'https://safe-surf.ru/rss/',
         'NCSC':'https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml',
         'CISA':'https://us-cert.cisa.gov/ncas/analysis-reports.xml',
        'MSFT SRC':'https://msrc-blog.microsoft.com/feed/',
-       'CERT FR':'https://www.cert.ssi.gouv.fr/feed/'}
+       'CERT FR':'https://www.cert.ssi.gouv.fr/feed/',
+       'CA':'https://cyber.gc.ca/en/rss-feeds',
+       'EE':'https://www.ria.ee/en/news-feed/all/feed'}
 #r = st.slider('',1,5,1)
 depth = 3
 dictlen = len(dict)
