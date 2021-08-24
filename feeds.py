@@ -11,7 +11,7 @@ dict = {'НКЦКИ':'https://safe-surf.ru/rss/',
         'CISA':'https://us-cert.cisa.gov/ncas/analysis-reports.xml',
        'MSFT SRC':'https://msrc-blog.microsoft.com/feed/',
        'CERT FR':'https://www.cert.ssi.gouv.fr/feed/',
-       'CA':'https://cyber.gc.ca/en/rss-feeds',
+       'Sec7':'https://sector7.computest.nl/index.xml',
        'EE':'https://www.ria.ee/en/news-feed/all/feed'}
 #r = st.slider('',1,5,1)
 depth = 3
