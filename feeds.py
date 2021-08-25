@@ -7,13 +7,11 @@ dict = {'НКЦКИ':'https://safe-surf.ru/rss/',
         'NSA':'https://www.nsa.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=920&max=20',
         'Securelist':'https://securelist.com/feed',
         'ESET':'https://www.welivesecurity.com/feed/',
-        'NCSC':'https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml',
-        'CISA':'https://us-cert.cisa.gov/ncas/analysis-reports.xml',
-       'MSFT SRC':'https://msrc-blog.microsoft.com/feed/',
-       'CERT FR':'https://www.cert.ssi.gouv.fr/feed/',
-       #'Sec7':'https://sector7.computest.nl/index.xml',
-        'MLWRNews':'https://malware.news/latest.rss',
-       'EE':'https://www.ria.ee/en/news-feed/all/feed'}
+        'EE':'https://www.ria.ee/en/news-feed/all/feed',
+        'CERT FR':'https://www.cert.ssi.gouv.fr/feed/',
+        'MSFT SRC':'https://msrc-blog.microsoft.com/feed/',
+        'Sec7':'https://sector7.computest.nl/index.xml',
+        'MLWRNews':'https://malware.news/latest.rss'}
 #r = st.slider('',1,5,1)
 depth = 3
 dictlen = len(dict)
